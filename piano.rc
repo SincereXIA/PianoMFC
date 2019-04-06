@@ -1,0 +1,299 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\piano.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\piano.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 piano"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "piano 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PIANO_DIALOG DIALOGEX 0, 0, 898, 293
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "电子琴"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",ID_Quit,831,272,50,14
+    PUSHBUTTON      "帮助",ID_HELP,764,272,50,14
+    CONTROL         130,IDC_QKey,"Static",SS_BITMAP,7,37,38,182
+    CONTROL         131,IDC_WKey,"Static",SS_BITMAP,45,38,40,182
+    CONTROL         129,IDC_EKey,"Static",SS_BITMAP,85,38,40,182
+    LTEXT           "",IDC_KVAL,28,278,8,8
+    CONTROL         136,IDC_RKey,"Static",SS_BITMAP,126,38,39,182
+    CONTROL         137,IDC_TKey,"Static",SS_BITMAP,163,38,40,182
+    CONTROL         138,IDC_YKey,"Static",SS_BITMAP,202,38,39,182
+    CONTROL         139,IDC_UKey,"Static",SS_BITMAP,241,38,39,182
+    LTEXT           "Press:",IDC_STATIC,7,278,25,8
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,239,7,320,31
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,7,7,320,31
+    LTEXT           "初始化中...",IDC_INIT_INFO,42,278,202,8
+    PUSHBUTTON      "Bad Apple",IDC_BUTTON1,543,258,50,14
+    PUSHBUTTON      "天空之城",IDC_BUTTON2,605,258,50,14
+    CONTROL         130,IDC_AKey,"Static",SS_BITMAP,282,38,38,182
+    CONTROL         131,IDC_SKey,"Static",SS_BITMAP,320,38,40,182
+    CONTROL         129,IDC_DKey,"Static",SS_BITMAP,360,38,40,182
+    CONTROL         136,IDC_FKey,"Static",SS_BITMAP,401,38,39,182
+    CONTROL         137,IDC_GKey,"Static",SS_BITMAP,438,38,39,182
+    CONTROL         138,IDC_HKey,"Static",SS_BITMAP,477,38,39,182
+    CONTROL         139,IDC_JKey,"Static",SS_BITMAP,516,38,39,182
+    CONTROL         130,IDC_ZKey,"Static",SS_BITMAP,555,38,38,182
+    CONTROL         131,IDC_XKey,"Static",SS_BITMAP,593,38,40,182
+    CONTROL         129,IDC_CKey,"Static",SS_BITMAP,633,38,40,182
+    CONTROL         136,IDC_VKey,"Static",SS_BITMAP,673,38,39,182
+    CONTROL         137,IDC_BKey,"Static",SS_BITMAP,709,38,39,182
+    CONTROL         138,IDC_NKey,"Static",SS_BITMAP,748,38,39,182
+    CONTROL         139,IDC_MKey,"Static",SS_BITMAP,787,38,39,182
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,559,7,320,31
+    CONTROL         "字母表模式",IDC_A2ZTrue,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,48,246,54,10
+    CONTROL         "模拟键序",IDC_A2ZFalse,"Button",BS_AUTORADIOBUTTON,48,
+                    260,46,10
+    CONTROL         "声卡输出",IDC_SoundLocalTrue,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,126,246,46,10
+    CONTROL         "串口控制",IDC_SoundLocalFalse,"Button",
+                    BS_AUTORADIOBUTTON,126,259,46,10
+    CONTROL         "一拍",IDC_Beat1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    280,263,32,10
+    CONTROL         "半拍",IDC_Beat1_2,"Button",BS_AUTORADIOBUTTON,337,263,
+                    32,10
+    CONTROL         "1/4拍",IDC_Beat1_4,"Button",BS_AUTORADIOBUTTON,394,263,
+                    36,10
+    CONTROL         "1/8拍",IDC_Beat1_8,"Button",BS_AUTORADIOBUTTON,457,262,
+                    36,10
+    LTEXT           "节拍选择器：",IDC_STATIC,228,263,49,8
+    CONTROL         "C大调",IDC_CRhythm,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,279,240,36,10
+    CONTROL         "D大调",IDC_DRhythm,"Button",BS_AUTORADIOBUTTON,456,240,
+                    36,10
+    LTEXT           "调性选择器：",IDC_STATIC,228,241,49,8
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 237, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "README"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,198,50,14
+    LTEXT           "欢迎使用电子琴程序",IDC_STATIC,80,4,73,8
+    LTEXT           "",IDC_STATIC,167,125,8,8
+    LTEXT           "        这是一个电子琴，按下按键 a-z 可以放出美妙的琴声！\n\n使用说明：\n        程序共有两种模式：1. 声卡输出 2.串口控制，在声卡输出的情况下，程序模拟钢琴音，通过计算机内置音源输出。在串口控制的情况下，计算机需要连接微机试验箱，通过 8254 控制蜂鸣喇叭输出数字音调。\n\n任意一种模式下，程序均提供两种模拟琴键的方式：\n        1.字母表模式：A-G代表低音，H-N代表中音，O-U代表高音；\n",
+                    IDC_STATIC,14,14,206,89
+    LTEXT           "        2.模拟键序：低音依次为Z,X,C,V,B,N,M，中音依次为A,S,D,F,G,H,J，高音依次为Q,W,E,R,T,Y,U。 \n\n调性和节拍选择器：\n        程序默认将调性设置为C大调,节拍设为1/4拍。您可以通过界面下方的调性选择器和节拍选择器进行相应的选择。\n\n内置曲目：\n        程序在内部录入两首乐曲：Bad Apple，天空之城，点击下方的按钮即可进行播放。",
+                    IDC_STATIC,16,105,204,90
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "piano Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "piano\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "piano.EXE\0"
+            VALUE "ProductName", "piano 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PIANO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 891
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_unpress3            BITMAP  DISCARDABLE     "res\\white3.bmp"
+IDB_unpress1            BITMAP  DISCARDABLE     "res\\white1.bmp"
+IDB_unpress2            BITMAP  DISCARDABLE     "res\\white2.bmp"
+IDB_press3              BITMAP  DISCARDABLE     "res\\whiteback3.bmp"
+IDB_press1              BITMAP  DISCARDABLE     "res\\whiteback1.bmp"
+IDB_press2              BITMAP  DISCARDABLE     "res\\whiteback2.bmp"
+IDB_HEAD                BITMAP  DISCARDABLE     "res\\header.bmp"
+IDB_unpress4            BITMAP  DISCARDABLE     "res\\white4.bmp"
+IDB_unpress5            BITMAP  DISCARDABLE     "res\\white5.bmp"
+IDB_unpress6            BITMAP  DISCARDABLE     "res\\white6.bmp"
+IDB_unpress7            BITMAP  DISCARDABLE     "res\\white7.bmp"
+IDB_press7              BITMAP  DISCARDABLE     "res\\whiteback7.bmp"
+IDB_press4              BITMAP  DISCARDABLE     "res\\whiteback4.bmp"
+IDB_press5              BITMAP  DISCARDABLE     "res\\whiteback5.bmp"
+IDB_press6              BITMAP  DISCARDABLE     "res\\whiteback6.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 piano(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\piano.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
